@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    filter: brightness(80%) blur(5px);
+    filter: brightness(80%) blur(10px);
 }
 
 .navbar {
