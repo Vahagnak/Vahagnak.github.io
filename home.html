@@ -2,58 +2,97 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="background.css">
+<style>
+body {
+  font-family: "Lato", Lato;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
 </head>
 <body>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <li><a href="home.html">Home</a></li>
     <li><a href="binair-stelsel.html">Binair stelsel</a></li>
     <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
     <li><a href="CPU.html">CPU</a></li>
     <li><a href="3-Lagenmodel.html">3 Lagenmodel</a></li>
     <li><a href="Contact.html">Contact</a></li>
-  </div>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
 <script>
-  function openNav() {
-    document.getElementById("myNav").style.width = "20%";
-  }
-  
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
-  </script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
 </body>
-</html>
-
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="background.css">
-</head>
-<body>
-
-<div class="bg-image"></div>
-
-<div class="bg-text">
-  <h2>Welkom!</h2>
-  <h1 style="font-size:50px">Vahagn Eliasian</h1>
-  <p>
-
-Ik zit momenteel in havo 4 op het Vlietland College in Leiden. 
-
-Deze website is ontstaan als onderdeel van een schoolopdracht voor het vak Informatica. Het was mijn eerste echte ervaring met coderen in talen zoals HTML en CSS. Deze uitdaging was leerzaam en bracht me nieuwe vaardigheden bij.
-
-Als je zelf iets nieuws wilt leren, bekijk dan mijn website, waar ik uitleg geef over verschillende informatica-gerelateerde onderwerpen.
-
-Welkom op mijn website, en laten we samen de wereld van informatica verkennen!</p>
-</div>
-
-</body>
-</html>
+</html> 
