@@ -1,35 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="background.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://png.pngtree.com/background/20230617/original/pngtree-blue-electronic-circuit-board-with-cpu-data-flow-in-3d-rendering-picture-image_3708596.jpg') center/cover fixed no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Donkere overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Aanpassen voor donkerte (0.5 is 50% donker) */
+        }
+    </style>
+    <title>Jouw Website</title>
 </head>
 <body>
-
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="binair-stelsel.html">Binair stelsel</a></li>
-    <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-    <li><a href="CPU.html">CPU</a></li>
-    <li><a href="3-Lagenmodel.html">3 Lagenmodel</a></li>
-    <li><a href="Contact.html">Contact</a></li>
+    <!-- Hier komt de inhoud van je website -->
+    <h1>Welkom op mijn website!</h1>
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="binair-stelsel.html">Binair stelsel</a></li>
+      <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+      <li><a href="CPU.html">CPU</a></li>
+      <li><a href="3-Lagenmodel.html">3 Lagenmodel</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </div>
   </div>
-</div>
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-     
-</body>
-</html>
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+       
+  </body>
+  </html>
