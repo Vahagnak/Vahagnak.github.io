@@ -5,14 +5,14 @@ body {
 }
 
 nav {
-    background-color: #f2f2f2; /* Licht grijze achtergrond */
+    background-color: #f2f2f2;
     overflow: hidden;
 }
 
 nav a {
     float: left;
     display: block;
-    color: black; /* Zwarte letters */
+    color: black; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
