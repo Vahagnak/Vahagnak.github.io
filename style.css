@@ -24,12 +24,6 @@
     margin: 0 20px;
     position: relative;
 }
-
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-}
 .navbar ul li::after{
     content: '';
     height: 3px;
@@ -38,6 +32,11 @@
     left: 0;
     bottom: -10px;
     transition: 0.5s;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
 }
 .navbar ul li:hover::after{
     width: 100%;
