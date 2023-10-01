@@ -22,37 +22,3 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
-body {
-    margin: 0;
-    padding: 0;
-    background: url('https://png.pngtree.com/background/20230617/original/pngtree-blue-electronic-circuit-board-with-cpu-data-flow-in-3d-rendering-picture-image_3708596.jpg') center/cover fixed no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-/* Donkere overlay */
-::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Aanpassen voor donkerte (0.5 is 50% donker) */
-}
-
-/* Vervaging van de achtergrond */
-::after {
-    content: "";
-    background: inherit;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: blur(10px); /* Aanpassen voor de mate van vervaging */
-}
