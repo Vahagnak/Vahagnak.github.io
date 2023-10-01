@@ -43,6 +43,6 @@
     bottom: -10px;
     transition: 0.5s;
 }
-.navbar ul li :hover::after{
+.navbar ul li:hover::after{
     width: 100%;
 }
