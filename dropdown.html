@@ -1,32 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mijn Pagina</title>   
-        <link rel="stylesheet" href="style.ccs"
-    </head>
-    <body>
-
-        <ul class="top-level-menu">
-            <li><a href="index.html">About</a></li>
-            <li><a href="home.html">Services</a></li>
-            <li>
-                <a href="kleurmodellen.html">Offices</a>
-                <ul class="second-level-menu">
-                    <li><a href="CPU.html">Chicago</a></li>
-                    <li><a href="Compressie.html">Los Angeles</a></li>
-                    <li>
-                        <a href="Contact.html">New York</a>
-                        <ul class="third-level-menu">
-                            <li><a href="binair-stelsel.html">Information</a></li>
-                            <li><a href="home.html">Book a Meeting</a></li>
-                            <li><a href="CPU.html">Testimonials</a></li>
-                            <li><a href="index.html">Jobs</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Contact.html">Seattle</a></li>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu met Subkoppen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="dropdown-menu">
+            <li class="dropdown">
+                <a href="#">Binairstelsel</a>
+                <ul class="dropdown-content">
+                    <li><a href="#subkop1">Subkop 1</a></li>
+                    <li><a href="#subkop2">Subkop 2</a></li>
+                    <li><a href="#subkop3">Subkop 3</a></li>
                 </ul>
             </li>
-            <li><a href="binair-stelsel.html">Contact</a></li>
-        </ul>a
-    </body>
+            <li class="dropdown">
+                <a href="#">Kleurmodellen</a>
+                <ul class="dropdown-content">
+                    <li><a href="#subkop4">Subkop 4</a></li>
+                    <li><a href="#subkop5">Subkop 5</a></li>
+                    <li><a href="#subkop6">Subkop 6</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section id="subkop1">
+        <h2>Subkop 1</h2>
+        <!-- Inhoud voor subkop 1 -->
+    </section>
+    <section id="subkop2">
+        <h2>Subkop 2</h2>
+        <!-- Inhoud voor subkop 2 -->
+    </section>
+    <section id="subkop3">
+        <h2>Subkop 3</h2>
+        <!-- Inhoud voor subkop 3 -->
+    </section>
+    <section id="subkop4">
+        <h2>Subkop 4</h2>
+        <!-- Inhoud voor subkop 4 -->
+    </section>
+    <section id="subkop5">
+        <h2>Subkop 5</h2>
+        <!-- Inhoud voor subkop 5 -->
+    </section>
+    <section id="subkop6">
+        <h2>Subkop 6</h2>
+        <!-- Inhoud voor subkop 6 -->
+    </section>
+</body>
 </html>
