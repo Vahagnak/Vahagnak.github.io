@@ -113,10 +113,6 @@ nav .navbar .links li:hover .js-sub-menu {
 .navbar .links li .sub-menu .more-arrow {
   line-height: 40px;
 }
-/* More Submenu Container */
-.navbar .links li .htmlCss-more-sub-menu {
-  /* Extra space for future styling */
-}
 /* More Submenu Display */
 .navbar .links li .sub-menu .more-sub-menu {
   position: absolute;
