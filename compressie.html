@@ -52,58 +52,97 @@
   </nav>
   <script src="script.js"></script>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uitleg over Compressie</title>
-    <style>
-        /* Zorgt voor ruimte onder de navbar */
-        .content {
-            padding-top: 80px; /* Pas deze waarde aan naar de hoogte van je navbar */
-            max-width: 600px;
-            margin: auto;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #444;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-    </style>
-</head>
-<body>
-
-<div class="content">
-    <h1>Wat is Compressie?</h1>
-    <p>Compressie is een techniek om bestanden kleiner te maken, zodat ze minder ruimte innemen op je computer of telefoon. Door compressie te gebruiken, kun je meer bestanden opslaan of ze sneller delen, bijvoorbeeld via internet.</p>
-
-    <h2>Hoe Werkt Compressie?</h2>
-    <p>Compressie werkt door onnodige informatie uit het bestand te halen of bepaalde delen samen te voegen. Stel je voor dat je een tekstbestand hebt met het woord "appeltje" dat vaak voorkomt. Door compressie kan dit woord korter worden weergegeven, zodat het minder ruimte inneemt.</p>
-
-    <h2>Soorten Compressie</h2>
-
-    <h3>1. Verliesloze Compressie</h3>
-    <p>Bij verliesloze compressie (of <strong>lossless compressie</strong>) gaat er geen informatie verloren. Het bestand wordt kleiner gemaakt zonder dat er iets verdwijnt. Dit wordt vaak gebruikt bij tekstbestanden en sommige afbeeldingen.</p>
-    <ul>
-        <li><strong>Voorbeeld:</strong> ZIP-bestanden gebruiken verliesloze compressie.</li>
-    </ul>
-
-    <h3>2. Verliesrijke Compressie</h3>
-    <p>Bij verliesrijke compressie (of <strong>lossy compressie</strong>) gaat er wel wat informatie verloren. Dit zorgt ervoor dat bestanden nóg kleiner worden, maar kan de kwaliteit een beetje verlagen. Dit is handig voor foto's, video's en muziek.</p>
-    <ul>
-        <li><strong>Voorbeeld:</strong> MP3-bestanden gebruiken verliesrijke compressie voor muziek, waardoor ze kleiner worden met een lichte vermindering in kwaliteit.</li>
-    </ul>
-
-    <h2>Waarom Compressie Gebruiken?</h2>
-    <p>Compressie helpt om bestanden kleiner te maken. Hierdoor kun je sneller bestanden downloaden en versturen, en meer bestanden bewaren op je apparaat.</p>
-</div>
-<footer>
-  <p>&copy; Made by Vahagn Eliasian </p>
-</footer>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wat is Compressie?</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f9;
+                color: #333;
+            }
+            header {
+                background-color: #005f99;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 0 20px;
+            }
+            h1, h2 {
+                color: #005f99;
+            }
+            ul {
+                margin-left: 20px;
+            }
+            .image-section {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .image-section img {
+                max-width: 100%;
+                height: auto;
+            }
+            footer {
+                text-align: center;
+                padding: 20px;
+                font-size: 0.9em;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <header>
+        <h1>Wat is Compressie?</h1>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>Introductie</h2>
+            <p>Compressie is een techniek die bestanden kleiner maakt zodat ze minder ruimte innemen. Door compressie te gebruiken kun je meer bestanden opslaan en ze sneller versturen of downloaden.</p>
+        </section>
+    
+        <section>
+            <h2>Hoe werkt het?</h2>
+            <p>Compressie werkt door onnodige gegevens uit een bestand te verwijderen of door patronen in het bestand te verkleinen. Hierdoor worden de bestanden kleiner, zonder dat je de inhoud verliest. Bijvoorbeeld, een afbeelding kan worden verkleind door minder belangrijke details te vereenvoudigen.</p>
+        </section>
+    
+        <section class="image-section">
+            <h2>Visualisatie</h2>
+            <img src="" alt="Afbeelding over compressie">
+            <p>Een afbeelding kan worden toegevoegd om het compressieproces te laten zien.</p>
+        </section>
+    
+        <section>
+            <h2>Waarom wordt het gebruikt?</h2>
+            <p>Compressie is handig omdat het de opslagruimte bespaart en bestanden sneller maakt om te versturen. Dit is vooral belangrijk voor grote bestanden zoals foto's, video's en software, die veel ruimte innemen.</p>
+        </section>
+    
+        <section>
+            <h2>Soorten Compressie</h2>
+            <p>Er zijn twee hoofdsoorten compressie:</p>
+            <ul>
+                <li><strong>Verliesloze compressie:</strong> Hierbij gaat geen informatie verloren, wat betekent dat het bestand precies hetzelfde blijft als je het weer uitpakt. Dit wordt vaak gebruikt voor tekst en sommige afbeeldingen.</li>
+                <li><strong>Verliesrijke compressie:</strong> Hierbij gaat wel wat informatie verloren, maar het bestand wordt veel kleiner. Dit wordt veel gebruikt voor foto’s, video's en muziek, omdat een beetje kwaliteitsverlies meestal niet opvalt.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Samenvatting</h2>
+            <p>Compressie maakt bestanden kleiner en zorgt ervoor dat ze minder ruimte innemen. Er zijn twee soorten compressie: verliesloos en verliesrijk. Beide soorten hebben hun eigen voordelen, afhankelijk van wat je met het bestand wilt doen en hoeveel ruimte je nodig hebt.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; Made by Vahagn Eliasian</p>
+    </footer>
 </body>
 </html>
