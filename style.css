@@ -291,3 +291,24 @@ nav .navbar .links li:hover .js-sub-menu {
     max-width: 100%;
   }
 }
+.footer {
+  background-color: #5695a5;
+  color: #9ff1ff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
