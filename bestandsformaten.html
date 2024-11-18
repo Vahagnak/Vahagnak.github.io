@@ -57,29 +57,35 @@
     <title>Wat zijn Bestandsformaten?</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #e9eff7;
+            color: #222;
         }
         header {
-            background-color: #005f99;
+            background-color: #1e3a8a;
             color: white;
-            padding: 20px 0;
+            padding: 15px 0;
             text-align: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
-            padding: 0 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h1, h2 {
-            color: #005f99;
+            color: #1e3a8a;
         }
         ul {
-            margin-left: 20px;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
         }
         .image-section {
             text-align: center;
@@ -88,12 +94,61 @@
         .image-section img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            border: 1px solid #ddd;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #666;
+            margin-top: 30px;
+            padding: 10px 0;
+            background-color: #f3f4f6;
+            font-size: 0.85em;
+            color: #555;
+        }
+        /* Dropdown specific styling to avoid interference */
+        nav {
+            background-color: #1e3a8a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        nav ul li a:hover {
+            background-color: #2563eb;
+        }
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #2563eb;
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 4px;
+        }
+        nav ul li ul li a {
+            padding: 8px 12px;
+            white-space: nowrap;
+            display: block;
+        }
+        nav ul li:hover ul {
+            display: block;
         }
     </style>
 </head>
@@ -102,6 +157,20 @@
 <header>
     <h1>Wat zijn Bestandsformaten?</h1>
 </header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Overzicht</a>
+            <ul>
+                <li><a href="#">Afbeeldingsformaten</a></li>
+                <li><a href="#">Documentformaten</a></li>
+                <li><a href="#">Videoformaten</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
 <div class="container">
     <section>
