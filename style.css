@@ -266,20 +266,3 @@ nav .navbar .links li:hover .js-sub-menu {
     transform: rotate(90deg);
   }
 }
-
-/* Submenu Arrow Box */
-.search-box .input-box::before {
-  content: '';
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  background: #5695a5; /* Corrected background */
-  right: 10px;
-  top: -6px;
-  transform: rotate(45deg);
-}
-
-/* Submenu List Item Padding */
-.navbar .links li .sub-menu li {
-  padding: 10px 22px; /* Added vertical padding */
-}
