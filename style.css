@@ -8,7 +8,6 @@
 body {
   min-height: 100vh;
 }
-/* Navigation Bar Styles */
 nav {
   position: fixed;
   top: 0;
@@ -19,7 +18,6 @@ nav {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
-/* Navbar Container */
 nav .navbar {
   height: 100%;
   max-width: 1250px;
@@ -30,23 +28,19 @@ nav .navbar {
   margin: auto;
   padding: 0 50px;
 }
-/* Logo Styling */
 .navbar .logo a {
   font-size: 30px;
   color: #004c79;
   text-decoration: none;
   font-weight: 600;
 }
-/* Navigation Links Styling */
 nav .navbar .nav-links {
   height: 100%;
   line-height: 70px;
 }
-/* Links Container */
 nav .navbar .links {
   display: flex;
 }
-/* Individual Links */
 nav .navbar .links li {
   position: relative;
   display: flex;
@@ -55,7 +49,6 @@ nav .navbar .links li {
   list-style: none;
   padding: 0 14px;
 }
-/* Links Anchor Tag Styling */
 nav .navbar .links li a {
   height: 100%;
   text-decoration: none;
@@ -64,12 +57,10 @@ nav .navbar .links li a {
   font-size: 15px;
   font-weight: 500;
 }
-/* Submenu Arrow Hover Effect */
 .links li:hover .htmlcss-arrow,
 .links li:hover .js-arrow {
   transform: rotate(180deg);
 }
-/* Arrow Icon Styling */
 nav .navbar .links li .arrow {
   height: 100%;
   width: 22px;
@@ -79,7 +70,6 @@ nav .navbar .links li .arrow {
   color: #fff;
   transition: all 0.3s ease;
 }
-/* Submenu Styling */
 nav .navbar .links li .sub-menu {
   position: absolute;
   top: 70px;
@@ -91,27 +81,22 @@ nav .navbar .links li .sub-menu {
   display: none;
   z-index: 2;
 }
-/* Show Submenu on Hover */
 nav .navbar .links li:hover .htmlCss-sub-menu,
 nav .navbar .links li:hover .js-sub-menu {
   display: block;
 }
-/* Submenu List Item Styling */
 .navbar .links li .sub-menu li {
   padding: 0 22px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* Submenu Anchor Styling */
 .navbar .links li .sub-menu a {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
 }
-/* More Submenu Arrow */
 .navbar .links li .sub-menu .more-arrow {
   line-height: 40px;
 }
-/* More Submenu Display */
 .navbar .links li .sub-menu .more-sub-menu {
   position: absolute;
   top: 0;
@@ -120,17 +105,14 @@ nav .navbar .links li:hover .js-sub-menu {
   z-index: 1;
   display: none;
 }
-/* Show More Submenu on Hover */
 .links li .sub-menu .more:hover .more-sub-menu {
   display: block;
 }
-/* Search Box Styling */
 .navbar .search-box {
   position: relative;
   height: 40px;
   width: 40px;
 }
-/* Search Icon */
 .navbar .search-box i {
   position: absolute;
   height: 100%;
@@ -143,7 +125,6 @@ nav .navbar .links li:hover .js-sub-menu {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-/* Search Input Box Styling */
 .navbar .search-box .input-box {
   position: absolute;
   right: calc(100% - 40px);
@@ -156,13 +137,11 @@ nav .navbar .links li:hover .js-sub-menu {
   pointer-events: none;
   transition: all 0.4s ease;
 }
-/* Show Search Input on Click */
 .navbar.showInput .search-box .input-box {
   top: 65px;
   opacity: 1;
   pointer-events: auto;
 }
-/* Arrow Box Above Search */
 .search-box .input-box::before {
   content: '';
   position: absolute;
@@ -173,7 +152,6 @@ nav .navbar .links li:hover .js-sub-menu {
   top: -6px;
   transform: rotate(45deg);
 }
-/* Search Input Field */
 .search-box .input-box input {
   position: absolute;
   top: 50%;
@@ -187,22 +165,12 @@ nav .navbar .links li:hover .js-sub-menu {
   font-size: 16px;
   border: none;
 }
-/* Sidebar Menu */
 .navbar .nav-links .sidebar-logo {
   display: none;
 }
-/* Mobile Menu Icon */
 .navbar .bx-menu {
   display: none;
 }
-/* Media Queries */
-/* Mobile View (Max-width: 800px) */
-@media (max-width: 800px) {
-  /* Show Mobile Menu Icon */
-  .navbar .bx-menu {
-    display: block;
-  }
-  /* Mobile Navigation Links */
   nav .navbar .nav-links {
     position: fixed;
     top: 0;
@@ -216,7 +184,6 @@ nav .navbar .links li:hover .js-sub-menu {
     transition: all 0.5s ease;
     z-index: 1000;
   }
-  /* Sidebar Logo */
   .navbar .nav-links .sidebar-logo {
     display: flex;
     align-items: center;
@@ -231,12 +198,10 @@ nav .navbar .links li:hover .js-sub-menu {
     font-size: 25px;
     color: #fff;
   }
-  /* Display Links in Block */
   nav .navbar .links {
     display: block;
     margin-top: 20px;
   }
-  /* Submenu Styling for Mobile */
   nav .navbar .links li .sub-menu {
     position: relative;
     top: 0;
@@ -247,7 +212,6 @@ nav .navbar .links li:hover .js-sub-menu {
     position: relative;
     left: 0;
   }
-  /* Disable Arrow Rotation on Mobile */
   .links li:hover .htmlcss-arrow,
   .links li:hover .js-arrow {
     transform: rotate(0deg);
@@ -257,7 +221,6 @@ nav .navbar .links li:hover .js-sub-menu {
   .navbar .nav-links.show2 .links .more .more-sub-menu {
     display: block;
   }
-  /* Arrow Rotation for Open Menus */
   .navbar .nav-links.show1 .links .htmlcss-arrow,
   .navbar .nav-links.show3 .links .js-arrow {
     transform: rotate(180deg);
@@ -265,4 +228,3 @@ nav .navbar .links li:hover .js-sub-menu {
   .navbar .nav-links.show2 .links .more-arrow {
     transform: rotate(90deg);
   }
-}
