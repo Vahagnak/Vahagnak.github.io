@@ -1,157 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-* {
+/* Basisstijl voor de navigatiebalk */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  margin-top: 70px;
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #5695a5;
-  z-index: 100;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  font-size: 16px;
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px;
-  height: 70px;
-  max-width: 1250px;
-  margin: auto;
-}
-
-.navbar .logo a {
-  font-size: 30px;
-  color: #004c79;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.navbar .nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .nav-links li {
-  position: relative;
   list-style: none;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.navbar .nav-links li a {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
+.navbar li {
+  position: relative;
+}
+
+.navbar li a {
+  color: white;
+  padding: 15px 20px;
   text-decoration: none;
-  padding: 10px 0;
   display: block;
-  transition: background-color 0.3s;
+  text-align: center;
 }
 
-.navbar .nav-links li:hover a {
-  background-color: #004c79;
-  border-radius: 4px;
+.navbar li a:hover {
+  background-color: #575757;
 }
 
-.navbar .nav-links li .sub-menu {
-  display: none;
+/* Dropdown menu styling */
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  list-style: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #5695a5;
-  padding: 10px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  width: 200px;
+  background-color: #333;
+  min-width: 200px;
+  display: none;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar .nav-links li:hover .sub-menu {
+.dropdown-menu li a {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #575757;
+}
+
+/* Submenu for the 'Fysieke Laag' item */
+.more .more-sub-menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #333;
+  min-width: 200px;
+}
+
+.more:hover > .more-sub-menu {
   display: block;
 }
 
-.navbar .nav-links li .sub-menu li {
-  padding: 8px 20px;
+.more-sub-menu li a {
+  padding: 10px 20px;
 }
 
-.navbar .nav-links li .sub-menu li a {
-  color: #fff;
-  font-size: 15px;
+.more-sub-menu li a:hover {
+  background-color: #575757;
 }
 
-.navbar .nav-links li .sub-menu li a:hover {
-  background-color: #004c79;
+/* Arrow icons */
+.htmlcss-arrow, .more-arrow {
+  margin-left: 5px;
 }
 
-.navbar .hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 8px;
-  justify-content: space-between;
-  height: 30px;
+.arrow {
+  vertical-align: middle;
 }
 
-.navbar .hamburger div {
-  width: 30px;
-  height: 4px;
-  background-color: #fff;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-@media (max-width: 768px) {
-  .navbar .nav-links {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 250px;
-    height: 100vh;
-    background-color: #5695a5;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px 20px;
-    transition: left 0.3s ease;
-  }
-
-  .navbar .nav-links.show {
-    left: 0;
-  }
-
-  .navbar .nav-links li {
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .navbar .nav-links li a {
-    padding: 15px 20px;
-    width: 100%;
-  }
-
-  .navbar .hamburger {
-    display: flex;
-  }
-
-  .navbar .hamburger.open div:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .navbar .hamburger.open div:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar .hamburger.open div:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
+/* Style for arrows when hovering over dropdown */
+.more:hover .more-arrow {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
 }
