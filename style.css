@@ -1,137 +1,150 @@
-/* Algemene stijlen voor de body en navbar-container */
+/* Algemene stijlen voor de body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9; /* Achtergrondkleur van de pagina */
-}
-/* Algemene stijlen voor de header, footer, en container */
-header {
-  background-color: #005f99;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+  background-color: #f4f4f4;
 }
 
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-h1, h2 {
-  color: #005f99;
-}
-
-ul {
-  margin-left: 20px;
-}
-
-.image-section {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.image-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* Navbar styling */
-.navbar {
- 
-  background-color: #333; /* Kleur menu */
-  position: fixed;
-  top: 0;
+/* Stijlen voor het navigatiemenu */
+nav {
+  background-color: #333;
   width: 100%;
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px; /* Grootte menu */
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-body {
-  background-color: rgb(215, 199, 199); /* Achtergrondkleur */
+nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
-/* Navbar styling */
-.navbar {
-  background-color: #333; /* Kleur menu */
+nav li {
   position: relative;
-  top: 100;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+}
+
+/* Hover-effect voor de hoofdmenu items */
+nav a:hover {
+  background-color: #575757;
+}
+
+/* Dropdown-menu stijlen */
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown content */
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  border-top: 2px solid #4CAF50;
+}
+
+nav .dropdown-content li {
   width: 100%;
 }
 
-.navbar a {
-  float: left;
+nav .dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* Sub-dropdown stijlen */
+nav .sub-dropdown:hover .sub-dropdown-content {
   display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px; /* Grootte menu */
-  text-decoration: none;
-  font-size: 17px;
 }
 
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-.dropdown {
-  float: left;
-  z-index: 1;
-}
-
-.dropbtn {
-  font-size: 16px; 
-  border: none;
-  outline: none; 
-  color: #f2f2f2; 
-  padding: 14px 16px; 
+nav .sub-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 160px;
+  top: 0;
   background-color: #333;
-  cursor: pointer; 
+  min-width: 160px;
+  z-index: 2;
+  border-top: 2px solid #4CAF50;
 }
 
-.dropdown-content {
-  display: none; 
-  position: absolute; 
-  background-color: #f9f9f9; 
-  min-width: 160px; 
-  z-index: 100; 
+nav .sub-dropdown-content a:hover {
+  background-color: #575757;
 }
 
-.dropdown-content a {
-  float: none; 
-  color: black; 
-  padding: 12px 16px;
-  text-decoration: none; 
-  display: block; 
-  text-align: left; 
+/* Zorg ervoor dat het menu niet te groot wordt */
+nav ul li {
+  position: relative;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+/* Kleine aanpassingen voor een meer 'compact' uiterlijk */
+nav a {
+  padding: 10px 15px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Kleine responsieve aanpassingen voor mobiel gebruik */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav a {
+      width: 100%;
+      text-align: left;
+      padding-left: 20px;
+  }
+
+  nav .dropdown-content,
+  nav .sub-dropdown-content {
+      left: 0;
+      top: auto;
+  }
 }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #005f99;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h1, h2 {
+    color: #005f99;
+}
+ul {
+    margin-left: 20px;
+}
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+

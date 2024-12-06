@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar met Dropdown</title>
-  <link rel="stylesheet" href="style.css"> <!-- Aangepaste CSS-paad -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.9/css/boxicons.min.css"> <!-- Boxicons voor iconen -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Voorbeeld</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <ul class="navbar">
-      <li><a href="home.html">Home</a></li>
-      <li class="dropdown">
-        <a href="3lagenmodel.html">3 Lagen model</a>
-        <i class='bx bxs-chevron-down htmlcss-arrow'></i>
-        <ul class="dropdown-menu">
-          <li><a href="logischelaag.html">Logische Laag</a></li>
-          <li><a href="toepassinglaag.html">Toepassing Laag</a></li>
-          <li class="more">
-            <span><a href="fysiekelaag.html">Fysieke Laag</a>
-            <i class='bx bxs-chevron-right arrow more-arrow'></i>
-            </span>
-            <ul class="more-sub-menu">
-              <li><a href="ram.html">Ram</a></li>
-              <li><a href="rom.html">Rom</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="compressie.html">Compressie</a></li>
-      <li><a href="binairstelsel.html">Binair Stelsel</a></li>
-      <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-      <li><a href="bestandsformaten.html">Bestandsformaten</a></li>
-    </ul>
-  </nav>
 
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">3 Lagenmodel</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Logische laag</a></li>
+                    <li><a href="#">Toepassende laag</a></li>
+                    <li class="sub-dropdown">
+                        <a href="#">Fysieke laag</a>
+                        <ul class="sub-dropdown-content">
+                            <li><a href="#">RAM</a></li>
+                            <li><a href="#">ROM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Compressie</a></li>
+            <li><a href="#">Binair Stelsel</a></li>
+            <li><a href="#">Kleurmodellen</a></li>
+            <li><a href="#">Bestandsformaten</a></li>
+        </ul>
+    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <header>
     <h1>Wat is RAM?</h1>
   </header>
