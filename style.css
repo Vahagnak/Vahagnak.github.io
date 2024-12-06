@@ -1,150 +1,105 @@
-/* Algemene stijlen voor de body */
+/* Algemene body- en achtergrondinstellingen */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: white;
+  color: black;
 }
 
-/* Stijlen voor het navigatiemenu */
-nav {
-  background-color: #333;
-  width: 100%;
+/* Header en navigatie */
+header {
+  background-color: blue;
 }
 
-nav ul {
+.navbar {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   display: flex;
 }
 
-nav li {
+.navbar > li {
   position: relative;
 }
 
-nav a {
+.navbar a {
   display: block;
-  padding: 10px 20px;
+  padding: 15px 20px;
   color: white;
   text-decoration: none;
-  text-align: center;
-  width: 120px;
+  font-weight: bold;
 }
 
-/* Hover-effect voor de hoofdmenu items */
-nav a:hover {
-  background-color: #575757;
+.navbar a:hover {
+  background-color: darkblue;
 }
 
-/* Dropdown-menu stijlen */
-nav .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Dropdown content */
-nav .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  z-index: 1;
-  border-top: 2px solid #4CAF50;
-}
-
-nav .dropdown-content li {
-  width: 100%;
-}
-
-nav .dropdown-content a:hover {
-  background-color: #575757;
-}
-
-/* Sub-dropdown stijlen */
-nav .sub-dropdown:hover .sub-dropdown-content {
-  display: block;
-}
-
-nav .sub-dropdown-content {
-  display: none;
-  position: absolute;
-  left: 160px;
-  top: 0;
-  background-color: #333;
-  min-width: 160px;
-  z-index: 2;
-  border-top: 2px solid #4CAF50;
-}
-
-nav .sub-dropdown-content a:hover {
-  background-color: #575757;
-}
-
-/* Zorg ervoor dat het menu niet te groot wordt */
-nav ul li {
+/* Dropdown-menu */
+.dropdown {
   position: relative;
 }
 
-/* Kleine aanpassingen voor een meer 'compact' uiterlijk */
-nav a {
-  padding: 10px 15px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: blue;
+  min-width: 160px;
+  z-index: 1;
 }
 
-/* Kleine responsieve aanpassingen voor mobiel gebruik */
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: column;
-  }
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+}
 
-  nav a {
-      width: 100%;
-      text-align: left;
-      padding-left: 20px;
-  }
+.dropdown-content a:hover {
+  background-color: darkblue;
+}
 
-  nav .dropdown-content,
-  nav .sub-dropdown-content {
-      left: 0;
-      top: auto;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+
+/* Sub-dropdown-menu */
+.dropdown-subcontent {
+  position: relative;
 }
-header {
-    background-color: #005f99;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+
+.dropdown-subcontent-dropdown {
+  display: none;
+  position: absolute;
+  background-color: blue;
+  min-width: 160px;
+  z-index: 2;
 }
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+
+.dropdown-subcontent-dropdown a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
 }
-h1, h2 {
-    color: #005f99;
+
+.dropdown-subcontent-dropdown a:hover {
+  background-color: darkblue;
 }
-ul {
-    margin-left: 20px;
+
+.dropdown-subcontent:hover .dropdown-subcontent-dropdown {
+  display: block;
 }
-.image-section {
-    text-align: center;
-    margin: 20px 0;
+
+/* Hoofdtekst en footer */
+main {
+  padding: 20px;
 }
-.image-section img {
-    max-width: 100%;
-    height: auto;
-}
+
 footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: #666;
+  text-align: center;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-
