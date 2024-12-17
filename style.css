@@ -79,7 +79,7 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Sub dropdown content */
+/* Sub dropdown content (for Fysieke Laag, RAM, and ROM) */
 .dropdown-subcontent {
     display: none;
     position: absolute;
@@ -110,7 +110,13 @@ nav ul li a:hover {
     background-color: #575757;
 }
 
+/* To display the sub-dropdown when hovering over the dropdown */
 .dropdown-subcontent:hover .dropdown-subcontent-dropdown {
+    display: block;
+}
+
+/* Show the subcontent when hovering over a parent item */
+.dropdown-content:hover .dropdown-subcontent {
     display: block;
 }
 
