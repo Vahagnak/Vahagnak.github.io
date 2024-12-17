@@ -79,7 +79,7 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Sub dropdown content (for Fysieke Laag, RAM, and ROM) */
+/* Sub dropdown content for Fysieke Laag (RAM and ROM) */
 .dropdown-subcontent {
     display: none;
     position: absolute;
@@ -87,6 +87,7 @@ nav ul li a:hover {
     top: 0;
     background-color: #333;
     border-radius: 5px;
+    min-width: 160px;
 }
 
 .dropdown-subcontent-dropdown {
@@ -96,6 +97,7 @@ nav ul li a:hover {
     left: 160px;
     background-color: #333;
     border-radius: 5px;
+    min-width: 160px;
 }
 
 .dropdown-subcontent a,
@@ -110,13 +112,12 @@ nav ul li a:hover {
     background-color: #575757;
 }
 
-/* To display the sub-dropdown when hovering over the dropdown */
+/* To display the sub-dropdown when hovering over the "Fysieke Laag" */
 .dropdown-subcontent:hover .dropdown-subcontent-dropdown {
     display: block;
 }
 
-/* Show the subcontent when hovering over a parent item */
-.dropdown-content:hover .dropdown-subcontent {
+.dropdown:hover .dropdown-subcontent {
     display: block;
 }
 
