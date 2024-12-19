@@ -3,39 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 Lagen Model</title>
+    <title>Website met Navbar</title>
+    <!-- Koppeling naar de externe CSS bestand -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="3lagenmodel.html" class="dropbtn">3 Lagen Model</a>
-                    <div class="dropdown-content">
-                        <a href="logischelaag.html">Logische Laag</a>
-                        <a href="toepassingenlaag.html">Toepassende Laag</a>
-                        <div class="dropdown-subcontent">
-                            <a href="fysiekelaag.html">Fysieke Laag</a>
-                            <div class="dropdown-subcontent-dropdown">
-                                <a href="ram.html">RAM</a>
-                                <a href="rom.html">ROM</a>
-                            </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">3 Lagenmodel</a>
+                <div class="dropdown-content">
+                    <a href="#">Geheugen</a>
+                    <a href="#">Logische Laag</a>
+                    <a href="#">Toepassende Laag</a>
+                    <div class="dropdown-submenu">
+                        <a href="#">Fysieke Laag</a>
+                        <div class="dropdown-submenu-content">
+                            <a href="#">RAM</a>
+                            <a href="#">ROM</a>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Welkom op mijn website</h1>
-        <p>Mijn naam is Vahagn Eliasian, 17 jaar oud. Ik zit op het Vlietland College in Leiden. In deze website zal ik verschillende belangrijke onderwerpen uitleggen en heb ik gekozen om te verdiepen op de geheugen.</p>
-    </main>
-
-    <footer>
-        <p>Made by Vahagn</p>
-    </footer>
+                </div>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>

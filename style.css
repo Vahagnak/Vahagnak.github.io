@@ -1,47 +1,43 @@
-/* Algemene opmaak voor het hele lichaam */
+/* Algemene stijl voor de body */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
 }
 
-/* Header en navigatie */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Navbar stijl */
+nav {
+    background-color: #000000; /* Zwarte achtergrond voor de navbar */
+    text-align: center;
 }
 
+/* Stijl voor de menu items */
 nav ul {
-    list-style: none;
-    margin: 0;
+    list-style-type: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 nav ul li {
     position: relative;
+    padding: 14px 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
     display: block;
-    transition: background-color 0.3s, transform 0.3s;
     font-size: 18px;
 }
 
+/* Hover effect voor de navbar */
 nav ul li a:hover {
-    background-color: #575757;
-    transform: scale(1.1);
+    background-color: #0000ff; /* Blauwe kleur bij hover */
 }
 
-/* Dropdown menu */
+/* Stijl voor de dropdown */
 .dropdown {
     position: relative;
 }
@@ -49,135 +45,54 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #444;
-    min-width: 180px;
+    background-color: #000000;
+    min-width: 200px;
     z-index: 1;
-    border-radius: 5px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
+    text-align: left;
 }
 
 .dropdown-content a {
+    padding: 10px;
     color: white;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
-    transition: background-color 0.3s;
 }
 
 .dropdown-content a:hover {
-    background-color: #555;
+    background-color: #0000ff; /* Blauwe hover kleur in de dropdown */
 }
 
+/* Submenu voor de Fysieke Laag */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.dropdown-submenu-content a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-submenu-content a:hover {
+    background-color: #0000ff;
+}
+
+/* Hover effect voor dropdown */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Sub-dropdown voor Fysieke Laag (RAM en ROM) */
-.dropdown-subcontent {
-    display: none;
-    position: absolute;
-    left: 180px;
-    top: 0;
-    background-color: #555;
-    border-radius: 5px;
-}
-
-.dropdown-subcontent-dropdown {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 160px;
-    background-color: #666;
-    border-radius: 5px;
-}
-
-.dropdown-subcontent a,
-.dropdown-subcontent-dropdown a {
-    padding: 12px 16px;
-    text-decoration: none;
-    color: white;
-    transition: background-color 0.3s;
-}
-
-.dropdown-content .dropdown-subcontent a:hover,
-.dropdown-subcontent-dropdown a:hover {
-    background-color: #777;
-}
-
-/* Show the sub-dropdown when hovering over "Fysieke Laag" */
-.dropdown-subcontent:hover .dropdown-subcontent-dropdown {
+/* Hover effect voor submenu */
+.dropdown-submenu:hover .dropdown-submenu-content {
     display: block;
-}
-
-.dropdown:hover .dropdown-subcontent {
-    display: block;
-}
-
-/* Submenu en submenu-dropdown effecten */
-.dropdown-subcontent a:hover {
-    background-color: #444;
-}
-
-.dropdown:hover .dropdown-subcontent {
-    display: block;
-}
-
-/* Hoofdinhoud */
-main {
-    padding: 20px;
-    background-color: white;
-    max-width: 1000px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #333;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-p {
-    line-height: 1.6;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive layout */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li a {
-        padding: 15px;
-    }
-
-    .dropdown-content {
-        left: 0;
-    }
-
-    .dropdown-subcontent {
-        left: 0;
-        top: 50px;
-    }
-
-    .dropdown-subcontent-dropdown {
-        left: 0;
-        top: 0;
-    }
 }
