@@ -3,60 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 Lagen Model</title>
+    <title>Website met Navbar</title>
+    <!-- Koppeling naar de externe CSS bestand -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="3lagenmodel.html" class="dropbtn">3 Lagen Model</a>
-                    <div class="dropdown-content">
-                        <a href="logischelaag.html">Logische Laag</a>
-                        <a href="toepassingenlaag.html">Toepassende Laag</a>
-                        <div class="dropdown-subcontent">
-                            <a href="fysiekelaag.html">Fysieke Laag</a>
-                            <div class="dropdown-subcontent-dropdown">
-                                <a href="ram.html">RAM</a>
-                                <a href="rom.html">ROM</a>
-                            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">3 Lagenmodel</a>
+                <div class="dropdown-content">
+                    <a href="#">Geheugen</a>
+                    <a href="logischelaag.html">Logische Laag</a>
+                    <a href="toepassingenlaag.html">Toepassende Laag</a>
+                    <div class="dropdown-submenu">
+                        <a href="fysiekelaag.html">Fysieke Laag</a>
+                        <div class="dropdown-submenu-content">
+                            <a href="ram.html">RAM</a>
+                            <a href="rom.html">ROM</a>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </header>
-        </nav>
-        <header>
-            <h1>Wat is de Fysieke Laag?</h1>
-         </header>
-         
-         <div class="container">
-            <section>
-                <h2>Introductie</h2>
-                <p>De <strong>fysieke laag</strong> is het laagste niveau van het 3-lagenmodel. Deze laag zorgt ervoor dat de gegevens fysiek van de ene computer naar de andere gaan. Dit gebeurt via kabels, draadloze signalen of andere fysieke verbindingen.</p>
-            </section>
-         
-            <section>
-                <h2>Wat doet de Fysieke Laag?</h2>
-                <p>De fysieke laag zorgt ervoor dat gegevens echt kunnen reizen van het ene apparaat naar het andere. Dit gebeurt bijvoorbeeld via:</p>
-                <ul>
-                    <li>Ethernet-kabels (bekabelde verbindingen)</li>
-                    <li>Wi-Fi (draadloze verbindingen)</li>
-                    <li>Glasvezel voor snellere verbindingen over lange afstanden</li>
-                </ul>
-                <p>Het is dus de laag die zorgt voor de verbindingen die de gegevens van het ene apparaat naar het andere sturen.</p>
-            </section>
-         
-            <section>
-                <h2>Voorbeeld</h2>
-                <p>Als je een bestand verstuurt via Wi-Fi, zorgt de fysieke laag ervoor dat het bestand in de vorm van draadloze signalen van jouw apparaat naar het apparaat van je vriend gaat.</p>
-            </section>
-         </div>
-
-    <footer>
-        <p>Made by Vahagn</p>
-    </footer>
+                </div>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>

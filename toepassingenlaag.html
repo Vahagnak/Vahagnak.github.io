@@ -3,60 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 Lagen Model</title>
+    <title>Website met Navbar</title>
+    <!-- Koppeling naar de externe CSS bestand -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="3lagenmodel.html" class="dropbtn">3 Lagen Model</a>
-                    <div class="dropdown-content">
-                        <a href="logischelaag.html">Logische Laag</a>
-                        <a href="toepassingenlaag.html">Toepassende Laag</a>
-                        <div class="dropdown-subcontent">
-                            <a href="fysiekelaag.html">Fysieke Laag</a>
-                            <div class="dropdown-subcontent-dropdown">
-                                <a href="ram.html">RAM</a>
-                                <a href="rom.html">ROM</a>
-                            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">3 Lagenmodel</a>
+                <div class="dropdown-content">
+                    <a href="#">Geheugen</a>
+                    <a href="logischelaag.html">Logische Laag</a>
+                    <a href="toepassingenlaag.html">Toepassende Laag</a>
+                    <div class="dropdown-submenu">
+                        <a href="fysiekelaag.html">Fysieke Laag</a>
+                        <div class="dropdown-submenu-content">
+                            <a href="ram.html">RAM</a>
+                            <a href="rom.html">ROM</a>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </nav>
-        </header>
-        <header>
-            <h1>Wat is de Toepassingslaag?</h1>
-         </header>
-         
-         <div class="container">
-            <section>
-                <h2>Introductie</h2>
-                <p>De <strong>toepassingslaag</strong> is de laag die het dichtst bij de gebruiker staat. Het zorgt ervoor dat jij met je applicaties (zoals web browsers of e-mail programma’s) kunt communiceren via het netwerk.</p>
-            </section>
-         
-            <section>
-                <h2>Wat doet de Toepassingslaag?</h2>
-                <p>De toepassingslaag zorgt ervoor dat verschillende programma's (zoals een webbrowser of e-mailprogramma) goed kunnen communiceren met elkaar via het netwerk. Dit gebeurt door het gebruik van verschillende protocollen zoals:</p>
-                <ul>
-                    <li>HTTP (voor het laden van webpagina's)</li>
-                    <li>SMTP (voor het versturen van e-mail)</li>
-                    <li>FTP (voor het versturen van bestanden)</li>
-                </ul>
-                <p>De toepassingslaag maakt het mogelijk dat je een website kunt bezoeken, een e-mail kunt sturen of bestanden kunt delen.</p>
-            </section>
-         
-            <section>
-                <h2>Voorbeeld</h2>
-                <p>Wanneer je een e-mail verstuurt, zorgt de toepassingslaag ervoor dat de e-mail via het juiste protocol (zoals SMTP) naar de server wordt gestuurd en bij de ontvanger aankomt.</p>
-            </section>
-         </div>
-
-    <footer>
-        <p>Made by Vahagn</p>
-    </footer>
+                </div>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
