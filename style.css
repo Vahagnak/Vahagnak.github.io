@@ -1,17 +1,14 @@
-/* Algemene stijl voor de body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Navbar stijl */
 nav {
-    background-color: #000000; /* Zwarte achtergrond voor de navbar */
+    background-color: #000000; 
     text-align: center;
 }
 
-/* Stijl voor de menu items */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -32,12 +29,10 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Hover effect voor de navbar */
 nav ul li a:hover {
-    background-color: #0000ff; /* Blauwe kleur bij hover */
+    background-color: #0000ff; 
 }
 
-/* Stijl voor de dropdown */
 .dropdown {
     position: relative;
 }
@@ -60,10 +55,9 @@ nav ul li a:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #0000ff; /* Blauwe hover kleur in de dropdown */
+    background-color: #0000ff;
 }
 
-/* Submenu voor de Fysieke Laag */
 .dropdown-submenu {
     position: relative;
 }
@@ -87,18 +81,15 @@ nav ul li a:hover {
     background-color: #0000ff;
 }
 
-/* Hover effect voor dropdown */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Hover effect voor submenu */
 .dropdown-submenu:hover .dropdown-submenu-content {
     display: block;
 }
-/* Stijl voor de footer */
 footer {
-    background-color: #000000; /* Zwarte achtergrond */
+    background-color: #000000; 
     color: white;
     text-align: center;
     padding: 20px 0;
