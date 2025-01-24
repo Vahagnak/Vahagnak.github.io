@@ -106,27 +106,29 @@ footer p {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* Witte achtergrond */
+    background-color: #ffffff;
+
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #000000; /* Zwarte tekstkleur */
+    color: #000000; 
     text-align: left;
     line-height: 1.6;
     display: flex;
-    flex-direction: column; /* Gebruik kolomrichting voor de inhoud */
+    flex-direction: column; 
     gap: 20px;
-    opacity: 1; /* Zorgt ervoor dat de inhoud volledig zichtbaar is */
+    opacity: 1; 
 }
 
 .content h1, .content h2, .content h3 {
-    color: #ca266b; /* Roze voor bij de kopjes */
-    margin-top: 0;  /* Geen marge aan de bovenkant van de kopjes */
-    margin-bottom: 3px; /* Zeer kleine marge aan de onderkant van de kopjes */
-    padding: 0; /* Verwijder eventuele padding van kopjes */
+    color: #909090; 
+    margin-top: 0;  
+    margin-bottom: 3px; 
+    padding: 0; 
 }
 
 .content p {
-    margin-top: 0; /* Geen ruimte boven alinea's */
-    margin-bottom: 10px; /* Kleinere ruimte onder de alinea */
+    margin-top: 0; 
+    margin-bottom: 10px; 
     font-size: 16px; 
     padding: 0; 
 }
