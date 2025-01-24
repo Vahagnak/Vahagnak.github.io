@@ -40,7 +40,7 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000000;
+    background-color: #989898;
     min-width: 200px;
     z-index: 1;
     top: 100%;
