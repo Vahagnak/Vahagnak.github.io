@@ -102,47 +102,31 @@ footer p {
     margin: 0;
     font-size: 16px;
 }
-main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.content {
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
-    margin-top: 80px; /* Ruimte bovenaan voor navigatie */
-}
-
-section {
-    max-width: 800px; /* Limiteer de breedte van de content */
-    width: 100%;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
-    border-radius: 8px;
-}
-
-section h1 {
-    color: #000;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-section h2 {
-    color: #0000ff;
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-section p {
-    font-size: 16px;
+    background-color: #ffffff; /* Witte achtergrond */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000000; /* Zwarte tekstkleur */
+    text-align: left;
     line-height: 1.6;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Gebruik kolomrichting voor de inhoud */
+    gap: 20px;
+    opacity: 1; /* Zorgt ervoor dat de inhoud volledig zichtbaar is */
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 20px;
+.content h1, .content h2, .content h3 {
+    color: #ca266b; /* Roze voor bij de kopjes */
+    margin-top: 0;  /* Geen marge aan de bovenkant van de kopjes */
+    margin-bottom: 3px; /* Zeer kleine marge aan de onderkant van de kopjes */
+    padding: 0; /* Verwijder eventuele padding van kopjes */
 }
 
-ul li {
-    font-size: 16px;
-    margin-bottom: 5px;
+.content p {
+    margin-top: 0; /* Geen ruimte boven alinea's */
+    margin-bottom: 10px; /* Kleinere ruimte onder de alinea */
+    font-size: 16px; 
+    padding: 0; 
 }
