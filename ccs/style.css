@@ -1,14 +1,27 @@
+/* Algemeen */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; 
-    line-height: 1.6; 
+    text-align: center;
+    line-height: 1.6;
+    background-color: #f4f7fa;
+    color: #333;
 }
 
+h1, h2 {
+    font-weight: 700;
+    color: #2D98F0;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+/* Navigatie */
 nav {
-    background-color: #000000;
-    text-align: center;
+    background-color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -17,11 +30,13 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    background-color: #333;
 }
 
 nav ul li {
+    padding: 14px 25px;
     position: relative;
-    padding: 14px 20px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a {
@@ -29,12 +44,18 @@ nav ul li a {
     text-decoration: none;
     display: block;
     font-size: 18px;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
-    background-color: #989898;
+    background-color: #2D98F0;
 }
 
+nav ul li:hover {
+    background-color: #444;
+}
+
+/* Dropdown-menu */
 .dropdown {
     position: relative;
 }
@@ -42,24 +63,32 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #989898;
+    background-color: #2D98F0;
     min-width: 200px;
     z-index: 1;
     top: 100%;
     left: 0;
     text-align: left;
+    border-radius: 4px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-content a {
     padding: 10px;
     color: white;
     text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #0000ff;
+    background-color: #0066cc;
 }
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Submenu */
 .dropdown-submenu {
     position: relative;
 }
@@ -67,38 +96,36 @@ nav ul li a:hover {
 .dropdown-submenu-content {
     display: none;
     position: absolute;
-    background-color: #000000;
+    background-color: #333;
     left: 100%;
     top: 0;
     z-index: 2;
+    border-radius: 4px;
 }
 
 .dropdown-submenu-content a {
     padding: 10px;
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
 }
 
 .dropdown-submenu-content a:hover {
-    background-color: #0000ff;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+    background-color: #0066cc;
 }
 
 .dropdown-submenu:hover .dropdown-submenu-content {
     display: block;
 }
 
+/* Footer */
 footer {
-    background-color: #000000;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
+    margin-top: 40px;
 }
 
 footer p {
@@ -106,34 +133,46 @@ footer p {
     font-size: 16px;
 }
 
+/* Hoofdgedeelte */
 section {
-    width: 80%; 
-    max-width: 900px; 
+    width: 80%;
+    max-width: 900px;
     margin: 50px auto;
-    text-align: left; 
-}
-
-h1, h2 {
-    color: #2D98F0; 
-}
-
-h2 {
-    margin-top: 20px; 
+    text-align: left;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 p {
     font-size: 18px;
     margin-bottom: 20px;
+    line-height: 1.8;
 }
 
 ul {
-    list-style-type: square; 
+    list-style-type: square;
     margin-left: 40px;
 }
 
 ul li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
-body {
-    background-color: #ffffff;
+
+/* Responsiviteit */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 12px 20px;
+    }
+
+    section {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
 }
