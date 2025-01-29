@@ -11,7 +11,7 @@ body {
 
 h1, h2 {
     font-weight: 700;
-    color: #2D98F0;
+    color: #00ff48;
 }
 
 h2 {
@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #2D98F0;
+    background-color: #00ff48;
 }
 
 nav ul li:hover {
@@ -63,7 +63,7 @@ nav ul li:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2D98F0;
+    background-color: #00ff48;
     min-width: 200px;
     z-index: 1;
     top: 100%;
@@ -81,7 +81,7 @@ nav ul li:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #0066cc;
+    background-color: #00ff48;
 }
 
 .dropdown:hover .dropdown-content {
@@ -110,7 +110,7 @@ nav ul li:hover {
 }
 
 .dropdown-submenu-content a:hover {
-    background-color: #0066cc;
+    background-color: #00ff48;
 }
 
 .dropdown-submenu:hover .dropdown-submenu-content {
