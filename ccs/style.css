@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centraal uitlijnen van tekst */
-    line-height: 1.6; /* Betere leesbaarheid van tekst */
+    text-align: center; 
+    line-height: 1.6; 
 }
 
 nav {
