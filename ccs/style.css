@@ -67,7 +67,7 @@ nav ul li a:hover {
 .dropdown-submenu-content {
     display: none;
     position: absolute;
-    background-color: #000000;
+    background-color: #ffffff;
     left: 100%;
     top: 0;
     z-index: 2;
