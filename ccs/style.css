@@ -75,7 +75,7 @@ nav ul li a:hover {
 
 .dropdown-submenu-content a {
     padding: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
